@@ -2,6 +2,9 @@ import './home.css'
 import '../../App.css'
 
 export default function Home() {
+    const goToCalendar = () => {
+        document.href = "/calendar"
+    }
 
     return (
         <>
@@ -30,7 +33,7 @@ export default function Home() {
                         <div className="carousel-item">
                             <img src="roblox.png" className="d-block w-100" alt="Screenshot of Roblox Studio" />
                             <div className="p-2 m-4 bottom-left textblock">
-                                <h2>Teaching kids how to be developers</h2>
+                                <h2>Teaching kids practical programming skills</h2>
                             </div>
                         </div>
                     </div>
@@ -42,6 +45,9 @@ export default function Home() {
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Next</span>
                     </button>
+                </div>
+                <div className="mt-1 bg-white">
+                    <button className="btn btn-primary btn-lg m-5">View upcoming events</button>
                 </div>
             </div>
         </>

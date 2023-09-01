@@ -1,9 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 
 export default function Nav() {
     return (
         <div className="mb-1">
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary w-100">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">Hack Horsham</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,13 +13,13 @@ export default function Nav() {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <a className="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Calendar</a>
+                                <a className="nav-link" href="/calendar">Calendar</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contact</a>
+                                <a className="nav-link" href="/contact">Contact</a>
                             </li>
                         </ul>
                     </div>
